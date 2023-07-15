@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AEB7E8"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#041159"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="HG SEG S.A.C"
+            android:textSize="50dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            app:layout_collapseMode="parallax" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="Ingreso a la App"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"></TextView>
+
+    <EditText
+        android:id="@+id/Txt_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="15sp"
+        android:layout_marginRight="20dp"
+        android:hint="Ingresar Nombre:"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        android:textSize="16sp"></EditText>
+
+    <EditText
+        android:id="@+id/Txt_contraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="15sp"
+        android:layout_marginRight="20dp"
+        android:hint="Ingresar Clave:"
+        android:inputType="textPassword"
+        android:textColorHint="@color/black"
+        android:textSize="16sp"></EditText>
+
+    <Button
+        android:id="@+id/Btn_Loguear"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="40dp"
+        android:backgroundTint="#4DA1EC"
+        android:padding="10dp"
+        android:hint="ACCEDER"
+        android:textStyle="bold"
+        android:textColorHint="#000000"
+        android:textSize="16dp"></Button>
+
+
+
+</LinearLayout>
